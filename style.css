@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    padding: 35px 50px 50px 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+            /* HEADER */
+nav {
+    padding: 50px 50px 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 30px;
+    transition: 120ms;
+}
+
+#menu a:hover {
+    color: #0065FC;
+    text-decoration: none;
+    border-top: 3px solid #0065FC;
+}
+
+#logo {
+    margin-right: auto;
+    height: 45px;
+    align-items: center;
+}
+            /* MAIN */
+                 /* SECTION 1 */
+#section1 {
+    padding-left: 6px;
+}
+                /* GROS TITRE */
+ 
+.titre_principal h1 {
+    font-size: 21.5px;
+}           
+
+.titre_principal p {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+                /* BARRE DE RECHERCHE */
+
+.search {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#localisation {
+    background-color: #F2F2F2;
+    padding: 14px 18px 14px 20px;
+    border-radius: 17px 0px 0px 17px;
+    font-size: 16px;
+}
+
+#searchbar {
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.search input::placeholder {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+
+.search input {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+.search button {
+    border: 1px solid #0065FC;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0px 17px 17px 0px;
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    padding: 14px 17px 14px 17px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 120ms;
+}
+
+.search button:hover{
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+                /* FILTRES */
+
+.filters_list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 0px 40px 6px;
+}
+
+.filters_list h2 {
+    font-size: 16px;
+    padding-right: 18px;
+}
+
+.filters_list span {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px 20px 0px 20px;
+}
+.filters_list div {
+    border: 2px solid #D9D9D9;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 180ms;
+
+}
+.filters_list i {
+    color: #0065FC;
+    background-color: #DEEBFE;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -3px;  
+}
+
+.filters_list div:hover {
+    background-color: #DEEBFE;
+    border-radius: 35px;
+    align-items: center;
+    cursor: pointer;
+}
+            /* RESULTAT INFO */
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+.info i {
+    color: #0065FC;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+                /* CENTRAL */
+#central {
+display: flex;
+gap: 40px;
+padding-bottom: 70px;
+}             
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #D9D9D9;
+}
+
+.stars {
+    font-size: 11px;
+}
+
+                /* SECTION 2 - HEBERGEMENTS */
+
+#hebergements {
+    background-color: #F2F2F2 ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+#hebergements h2 {
+    font-size: 21px;
+    margin-top: 40px;
+    margin-left: 40px;          
+} 
+
+.hebergementcontent {
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.hebergementcontent figure{
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #D9D9D9;
+    padding: 5px;
+}
+
+.hebergementcontent figure:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.hebergementcontent img {
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    height: 110px;
+    width: 100%;;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.hebergementcontent figcaption {
+    font-size: 13px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    gap: 5px;
+}
+
+.afficherplus {
+    padding: 5px 0px 45px 45px;
+    font-size: 17px;
+
+}
+
+                /* SECTION 3 - POPULAIRES */
+#popular {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex: 1;
+}
+
+#popular h2{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titlepopular {
+    margin: 40px 40px 0px 40px;
+}
+
+.popularcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 28px 30px 40px 30px;
+}
+
+.popularcontent img {
+    border-radius: 15px 0px 0px 15px;
+    height: 130px;
+    width: 37%;
+    object-fit: cover;
+}
+
+.popularcontent figure {
+    background-color: white ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    box-shadow: 0 0 15px #D9D9D9; 
+}
+
+.popularcontent figure:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.popularcontent figcaption{  
+    width: 90%;
+    font-size: 13px;
+    padding: 10px 20px 8px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popularcontent .white {
+    height: 20%;
+}
+
+                /* SECTION 4 - ACTIVITES */
+
+#activities h2 {
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.activitiesbloc img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitiesbloc figure{
+    box-shadow: 0 0 15px #D9D9D9;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 120ms;
+}
+
+.activitiesbloc figure:hover{
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.activitiesbloc figcaption{
+    padding: 15px 0px 15px 20px;
+    font-size: 14px;
+}
+
+.activitiesbloc {
+    display: flex;
+    gap: 45px;
+}
+
+                /* BLOC ACTIVITES 1 */
+
+.bloc1 {
+    display: flex;
+    width: 50%;
+    gap: 25px;
+}
+
+.bloc1column {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 90%;
+}
+
+.bloc1 .portbloc {
+    height: 430px;
+}
+
+.bloc1 .port {
+    object-fit: cover;
+    height: 88%;
+}
+
+.bloc1 .fort {
+    object-fit: cover;
+    height: 175px;
+}
+
+.bloc1 .frioul {
+    object-fit: cover;
+    height: 120px;
+}
+
+                /* BLOC ACTIVITES 2 */
+
+.bloc2 {
+    display: flex;
+    width: 50%;
+}
+
+.bloc2column {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.bloc2 .calanquesbloc {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+}
+.bloc2 .calanques {
+    object-fit: cover;
+    height: 88%;
+}
+
+.bloc2 .dame {
+    object-fit: cover;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc2 .longchamp {
+    object-fit: cover;
+    height: 155px;
+}
+
+        /* FOOTER */
+
+.footer {
+    max-width: 100%;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.apropos {
+    width: 25%;
+    padding: 45px 45px 70px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer a {
+    font-size: 14px;
+    transition: 120ms;
+}
+
+.footer a:hover{
+    transform: scale(1.008);
+}
+
+.apropos h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.noshebergements {
+    width: 25%;
+    padding: 45px 45px 70px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.noshebergements h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.assistance {
+    width: 25%;
+    padding: 45px 50px 70px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.assistance h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+            /* MEDIA QUERIES */ 
+            
+@media screen and (min-width:992px){
+    
+    button.icon {display:none}
+    button.text {display:inline-block}
+}
+
+@media screen and (max-width: 991px) {
+
+    button.icon {display:none}
+    button.text {display:inline-block}
+
+#central {
+    flex-direction:column-reverse;
+}
+
+.popularcontent img {
+    width: 30%;
+}
+
+.hebergementcontent figcaption {
+    font-size: 11px;
+}
+
+.activitiesbloc figure {
+    height: 230px;
+}
+
+.bloc1 {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloc1column {
+    width: 100%;
+    gap: 35px;
+}
+
+.bloc1 .portbloc {
+    height: 230px
+}
+
+.bloc1 .port {
+    height: 175px
+}
+.bloc1 .fort {
+    height: 175px;
+}
+.bloc1 .frioul {
+    height: 175px;
+}
+
+.bloc2 {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloc2column {
+    width: 100%;
+    margin: auto;
+}
+
+.bloc2 .calanquesbloc {
+    height: 230px;
+}
+
+.bloc2 .calanques {
+    height: 175px;
+}
+
+.bloc2 .dame {
+    height: 175px;
+}
+
+.bloc2 .longchamp {
+    height: 175px;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    button.icon {display:inline-block}
+    button.text {display:none}
+
+main {
+    padding: 35px 0px 35px 0px ;
+}
+
+#logo {
+    align-items: center;
+    margin-left: auto;
+    margin-top: 20px;
+}
+    
+#menu {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 30px;
+    text-align: center;
+
+}
+    
+#menu a {
+    flex-basis: 50%;
+    border-bottom: 3px solid #F2F2F2;
+}
+    
+#menu a:hover {
+    color: #0065FC;
+    text-decoration: none;
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    }
+
+nav {
+    padding: 0px;
+}
+
+#section1 {
+    padding: 0px 20px 0px 20px;
+}
+
+   /* GROS TITRE */
+
+.titre_principal h1 {
+    font-size: 20px;
+}
+
+.titre_principal p {
+    font-size: 14px;
+}
+
+    /* BARRE DE RECHERCHE */
+
+.search {
+    justify-content: center;
+}
+
+.searchbar {
+    margin-right: 15px;
+}
+
+.search button {
+    border-radius: 17px;
+    margin-left: -10px;
+}
+
+    /* FILTRES */
+
+.filters_list h2 {
+    font-size: 18px;
+    flex-basis: 100%;
+}
+
+.filters_list {
+    gap: 10px;
+}
+    
+/* RESULTAT INFO */
+
+.info i {
+    border-radius: 50%;
+    height: 22px;
+    width: 32px;
+}
+
+.info p {
+    justify-content: flex-end;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+/* SECTION POPULAR */
+
+#popular {
+    border-radius: 0px;
+}
+
+.popularcontent img {
+    width: 40%;
+}
+
+
+    /* SECTION 3 - HEBERGEMENTS */
+
+#hebergements {
+    background-color: white;
+}
+
+.hebergementcontent {
+    flex-direction: column;
+}
+
+.hebergementcontent figure {
+    width: 100%;
+}
+
+.hebergementcontent .stars {
+    font-size: 12px;
+}
+
+.afficherplus {
+    padding: 5px 35px 5px 35px;
+}
+
+    /* SECTION 4 - ACTIVITES */
+#activities {
+    padding: 0px 35px 0px 35px;
+}
+
+.activitiesbloc {
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+}
+
+.activitiesbloc figure {
+    width: 100%;
+    height: 200px;
+
+}
+
+.bloc1 .portbloc {
+    height: 200px;
+}
+
+.bloc1 .port {
+    height: 150px;
+}
+
+.bloc1 .fort {
+    height: 150px;
+}
+
+.bloc1 .frioul {
+    height: 150px;
+}
+
+.bloc2column{
+    margin-left: auto;
+}
+.bloc2 .calanquesbloc {
+    height: 200px;
+}
+
+.bloc2 .calanques {
+    height: 150px;
+}
+
+.bloc2 .dame {
+    height: 150px;
+}
+
+.bloc2 .longchamp {
+    height: 150px;
+}
+}
+    
