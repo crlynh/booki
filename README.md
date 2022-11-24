@@ -1,4 +1,4 @@
-# PROJET 1 - BOOKI
+# PROJET 2 - BOOKI
 ## Objectif du projet : Transformer une maquette en site web avec HTML & CSS
 
 Booki est une petite entreprise proposant un outil de planification de vacances.
